@@ -1,0 +1,6 @@
+{
+  "include": ["*"],
+  "compilerOptions": {
+    "lib": ["ES2015"]
+  },
+}
