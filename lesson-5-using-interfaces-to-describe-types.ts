@@ -21,12 +21,13 @@ interface ComicBookCharacter extends OptionalAttributes {
   alias: string
   health: number
   attack: AttackFunction
-
 }
 
 function attackFunc(opponent, attackWith) {
   opponent.health -= attackWith
-  console.log(`${this.alias} attacked ${opponent.alias}, who's health = ${opponent.health}`)
+  console.log(
+    `${this.alias} attacked ${opponent.alias}, who's health = ${opponent.health}`
+  )
   return opponent.health
 }
 
@@ -34,7 +35,7 @@ let superHero: ComicBookCharacter = {
   alias: 'gg',
   health: 5000,
   strength: 5000,
-  attack: attackFunc
+  attack: attackFunc,
 }
 
 let superVillain: ComicBookCharacter = {
@@ -42,7 +43,7 @@ let superVillain: ComicBookCharacter = {
   alias: 'catto',
   health: 75,
   insanity: 145,
-  attack: attackFunc
+  attack: attackFunc,
 }
 
 function getSecretIdentity(character: ComicBookCharacter) {

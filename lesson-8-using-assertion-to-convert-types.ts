@@ -26,10 +26,10 @@ let badGuy: BadGuy = {
 }
 
 function saveDayOrBadDeed(something: SuperHero | BadGuy) {
-  if ((something as SuperHero).powers) {
-    (something as SuperHero).savesTheDay()
+  if ('powers' in something) {
+    something.savesTheDay()
   } else {
-    (something as BadGuy).commitBadDeed()
+    something.commitBadDeed()
   }
 }
 

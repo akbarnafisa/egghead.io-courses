@@ -11,8 +11,6 @@ let powers = ['telekinesis', 'esp']
 
 interface SuperHero { name: string }
 
-pushSomethingIntoCollection<SuperHero>({
-  name: 'nick'
-}, superHeroes)
+pushSomethingIntoCollection<SuperHero>('nick', superHeroes)
 pushSomethingIntoCollection<string>('booba', powers)
 pushSomethingIntoCollection('amogus', powers)
